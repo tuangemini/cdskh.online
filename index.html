@@ -1085,34 +1085,43 @@
       <div class="ai-chat-header-info">
         <div class="ai-avatar"><i class="fas fa-microchip"></i></div>
         <div class="ai-title-block">
-          <h4>Trợ Lý Số Khánh Hòa</h4>
-          <span class="ai-status-online"><i class="fas fa-circle" style="font-size:0.5rem;"></i> Trực tuyến 24/7</span>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <h4>Trợ Lý Số Khánh Hòa</h4>
+            <span class="ai-provider-badge" id="ai-provider-badge" style="font-size:0.64rem; font-weight:700; background:rgba(0,240,255,0.15); color:var(--cyan-core); padding:2px 8px; border-radius:999px; border:1px solid rgba(0,240,255,0.4);" title="Nhấn để đổi giữa DeepSeek và Gemini AI">DeepSeek AI</span>
+          </div>
+          <span class="ai-status-online"><i class="fas fa-circle" style="font-size:0.5rem; color:#10b981;"></i> Trực tuyến 24/7 • KH&amp;CN, ĐMST, CĐS</span>
         </div>
       </div>
-      <button class="btn-close-chat" id="btn-close-chat" title="Đóng">
-        <i class="fas fa-times"></i>
-      </button>
+      <div style="display:flex; align-items:center; gap:6px;">
+        <button class="btn-chat-action" id="btn-ai-clear" title="Làm mới cuộc trò chuyện" style="background:transparent; border:none; color:#94a3b8; cursor:pointer; padding:6px; font-size:0.85rem;"><i class="fas fa-redo"></i></button>
+        <button class="btn-close-chat" id="btn-close-chat" title="Đóng">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
     </div>
 
     <div class="ai-chat-messages" id="ai-messages-list">
       <div class="msg msg-bot">
-        Xin chào quý khách! Tôi là <strong>Trợ lý AI Ngày hội Công nghệ số tỉnh Khánh Hòa năm 2026</strong>. Tôi có thể hỗ trợ quý khách thông tin về lịch trình, địa điểm, các gian hàng AI &amp; Robot, hoặc cách đăng ký vé VIP.
+        Xin chào quý khách! Tôi là <strong>Trợ lý AI Ngày hội Công nghệ số tỉnh Khánh Hòa năm 2026</strong> (tích hợp song song <em>DeepSeek &amp; Google Gemini</em>). Tôi sẵn sàng giải đáp mọi thắc mắc về <strong>khoa học công nghệ, đổi mới sáng tạo, chuyển đổi số</strong>, lịch trình sự kiện và thẻ đại biểu VIP.
       </div>
     </div>
 
-    <!-- Quick Prompts -->
+    <!-- Quick Prompts: Khoa học công nghệ, Đổi mới sáng tạo, Chuyển đổi số -->
     <div class="ai-quick-prompts">
-      <button class="prompt-chip" data-prompt="Thời gian và địa điểm tổ chức ở đâu?">
+      <button class="prompt-chip" data-prompt="Các xu hướng khoa học công nghệ và đổi mới sáng tạo nổi bật năm 2026 là gì?">
+        🚀 Xu hướng KH&amp;CN &amp; ĐMST?
+      </button>
+      <button class="prompt-chip" data-prompt="Khái niệm Chuyển đổi số và 4 trụ cột số của tỉnh Khánh Hòa là gì?">
+        💡 4 Trụ cột CĐS Khánh Hòa?
+      </button>
+      <button class="prompt-chip" data-prompt="Trí tuệ nhân tạo (AI) và Robot được ứng dụng như thế nào trong sự kiện?">
+        🤖 Ứng dụng AI &amp; Robot?
+      </button>
+      <button class="prompt-chip" data-prompt="Thời gian và địa điểm tổ chức Ngày hội Công nghệ số 2026 ở đâu?">
         📍 Thời gian &amp; địa điểm?
       </button>
-      <button class="prompt-chip" data-prompt="Chủ đề Ngày hội Công nghệ số 2026 là gì?">
-        ✨ Chủ đề sự kiện?
-      </button>
-      <button class="prompt-chip" data-prompt="Có những hoạt động trải nghiệm AI & Robot nào?">
-        🤖 Trải nghiệm Robot AI?
-      </button>
-      <button class="prompt-chip" data-prompt="Làm thế nào để đăng ký nhận vé VIP Metaverse?">
-        🎫 Nhận vé VIP?
+      <button class="prompt-chip" data-prompt="Làm thế nào để đăng ký nhận vé VIP Metaverse và tham gia thử thách số?">
+        🎫 Nhận vé VIP Metaverse?
       </button>
     </div>
 
