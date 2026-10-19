@@ -995,8 +995,8 @@ QUY TẮC PHỤC VỤ:
     providerBadge.addEventListener('click', () => {
       CDSKH_AI_CONFIG.provider = CDSKH_AI_CONFIG.provider === 'deepseek' ? 'gemini' : 'deepseek';
       localStorage.setItem('cdskh_ai_provider', CDSKH_AI_CONFIG.provider);
-      providerBadge.textContent = CDSKH_AI_CONFIG.provider === 'deepseek' ? 'DeepSeek AI' : 'Gemini AI';
-      providerBadge.style.color = CDSKH_AI_CONFIG.provider === 'deepseek' ? 'var(--cyan-core)' : '#f59e0b';
+      // providerBadge.textContent = CDSKH_AI_CONFIG.provider === 'deepseek' ? 'DeepSeek AI' : 'Gemini AI';
+      // providerBadge.style.color = CDSKH_AI_CONFIG.provider === 'deepseek' ? 'var(--cyan-core)' : '#f59e0b';
       if (typeof showToast === 'function') {
         showToast(`Đã chuyển sang mô hình ưu tiên: ${CDSKH_AI_CONFIG.provider === 'deepseek' ? 'DeepSeek AI' : 'Google Gemini AI'}`);
       }
